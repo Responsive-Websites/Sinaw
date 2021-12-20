@@ -271,6 +271,14 @@ body {
   color: inherit;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .header__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,13 +381,270 @@ body {
   display: none;
 }
 
+.main__heading {
+  margin-top: 56px;
+  padding-bottom: 200px;
+}
+
+.heading__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.heading__images {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  z-index: -1;
+}
+
+.heading__iconIllu {
+  width: 650px;
+}
+
+.heading__iconLamp {
+  position: absolute;
+  top: 120px;
+  left: 40px;
+  width: 60px;
+  z-index: -1;
+}
+
+.heading__iconBook {
+  position: absolute;
+  top: 10px;
+  left: 430px;
+  width: 70px;
+  z-index: -1;
+}
+
+.heading__iconMore {
+  position: absolute;
+  top: 470px;
+  left: 340px;
+  width: 270px;
+}
+
+.heading__iconEllipse {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 520px;
+}
+
+.heading__backImage {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 750px;
+  z-index: -2;
+}
+
+.heading__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.heading__label {
+  max-width: 484px;
+  margin-bottom: 24px;
+}
+
+.heading__text {
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 56px;
+}
+
+.heading__form {
+  margin-bottom: 48px;
+}
+
+.form-heading {
+  background: #1f2143;
+  border-radius: 12px;
+  max-width: 506px;
+  padding: 12px 12px 12px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-heading__input {
+  width: 100%;
+  background: #1f2143;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form-heading__search {
+  background: #282b57;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.suggestions__label {
+  margin-bottom: 34px;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.suggestions__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.suggestions__item {
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(154, 156, 203, 0.6);
+  border: 1px solid rgba(154, 156, 203, 0.6);
+  border-radius: 8px;
+  padding: 8px 18px;
+  margin-bottom: 24px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.suggestions__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.suggestions__item:hover {
+  color: #f5443b;
+  border: 1px solid #f5443b;
+}
+
+@media screen and (min-width: 1937px) {
+  .heading__backImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1505px) {
+  .heading__backImage {
+    top: 140px;
+    left: 0;
+    width: 600px;
+  }
+
+  .heading__backImage {
+    top: 140px;
+    left: 0;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1249px) {
+  .heading__iconIllu {
+    width: 550px;
+  }
+
+  .heading__iconLamp {
+    top: 80px;
+  }
+
+  .heading__iconMore {
+    top: 410px;
+    left: 240px;
+  }
+
+  .heading__backImage {
+    top: 230px;
+    left: 0;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1113px) {
+  .heading__iconIllu {
+    width: 450px;
+  }
+
+  .heading__iconLamp {
+    top: 40px;
+  }
+
+  .heading__iconBook {
+    top: 0px;
+    left: 280px;
+  }
+
+  .heading__iconMore {
+    display: none;
+  }
+
+  .heading__iconEllipse {
+    width: 420px;
+    z-index: -2;
+    left: 20px;
+  }
+
+  .heading__backImage {
+    top: 180px;
+  }
+}
+
+@media screen and (max-width: 1101px) {
+  .suggestions__item:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  .suggestions__item {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 40px;
+    padding-right: 20px;
+  }
+
+  .heading__text {
+    font-size: 16px;
+    margin-bottom: 46px;
+    padding-right: 20px;
+  }
+
+  .heading__form {
+    margin-bottom: 30px;
+  }
+
+  .suggestions__item {
+    padding: 5px 15px;
+  }
+}
+
 @media screen and (max-width: 967px) {
   .header__logo {
     margin-right: 0px;
   }
 
   .menu__icon {
-    z-index: 5;
+    z-index: 10;
     display: block;
     position: relative;
     width: 30px;
@@ -505,5 +770,110 @@ body {
   .button:hover {
     background-color: #171836;
     color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .heading__body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .heading__iconIllu {
+    width: 350px;
+  }
+
+  .heading__iconLamp {
+    display: none;
+  }
+
+  .heading__iconBook {
+    display: none;
+  }
+
+  .heading__iconEllipse {
+    display: none;
+  }
+
+  .heading__backImage {
+    width: 250px;
+    top: 280px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .main__heading {
+    padding-bottom: 20px;
+  }
+
+  .heading__body {
+    display: block;
+    text-align: center;
+  }
+
+  .heading__images {
+    display: none;
+  }
+
+  .heading__iconIllu {
+    display: none;
+  }
+
+  .heading__backImage {
+    display: none;
+  }
+
+  .heading__label {
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  .heading__text {
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+
+  .heading__form {
+    margin-bottom: 25px;
+  }
+
+  .form-heading {
+    max-width: none;
+  }
+
+  .suggestions__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 21px;
+  }
+
+  .heading__text {
+    font-size: 14px;
+    margin-bottom: 26px;
+  }
+
+  .heading__form {
+    margin-bottom: 20px;
+  }
+
+  .form-heading__input {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .suggestions {
+    display: none;
   }
 }

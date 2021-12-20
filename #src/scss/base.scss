@@ -63,3 +63,21 @@ body {
     color: inherit;
   }
 }
+
+h1 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.8);
+  @media screen and (max-width: 992px) {
+    font-size: 40px;
+    padding-right: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 21px;
+  }
+}
