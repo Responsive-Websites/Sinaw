@@ -1,0 +1,65 @@
+body {
+  height: 100%;
+  font-family: Inter;
+  background-color: #171836;
+  font-size: 14px;
+  line-height: 170%;
+  color: $fontBaseColor;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+._ibg {
+  position: relative;
+}
+._ibg source {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+.button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 12px 32px;
+  background: #f5443b;
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 121.4%;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  &__link {
+    color: inherit;
+  }
+}

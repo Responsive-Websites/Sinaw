@@ -1,0 +1,155 @@
+.header {
+  &__container {
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  &__map {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 148px;
+    @media screen and (max-width: 967px) {
+      margin-right: 0px;
+    }
+  }
+  &__nav {
+  }
+  &__authen {
+    display: flex;
+    align-items: center;
+  }
+  &__language {
+  }
+  &__login {
+  }
+}
+
+.nav-header {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    line-height: 121%;
+    color: $fontBaseColor;
+    font-weight: 400;
+    transition: 0.5s;
+    &:hover {
+      color: #ffffff;
+    }
+    &:not(:last-child) {
+      margin-right: 44px;
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}
+.lang-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  & p {
+    margin-right: 4px;
+  }
+  &__image {
+    display: flex;
+  }
+  &__arrow {
+    margin-top: 17px;
+    margin-left: 4px;
+  }
+}
+
+.login-header {
+  &__button {
+    margin-left: 31px;
+  }
+}
+
+.menu__icon {
+  display: none;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 967px) {
+  .menu__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    margin-right: 5px;
+
+    & span,
+    &::before,
+    &::after {
+      left: 0;
+      position: absolute;
+      height: 11%;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: #ffffff;
+    }
+    &::before,
+    &::after {
+      content: "";
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+      height: 2px;
+    }
+    & span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+    }
+
+    &._active span {
+      transform: scale(0) translate(0px, -50%);
+    }
+    &._active::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+    }
+    &._active::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 50%);
+    }
+  }
+  .header__login {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+
+    background: #485bff;
+    padding: 100px 30px 30px 60px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+
+    &._active {
+      left: 0;
+    }
+  }
+  .header__language {
+    margin-right: 30px;
+  }
+}
