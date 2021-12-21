@@ -81,6 +81,21 @@ h1 {
     font-size: 21px;
   }
 }
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+  @media screen and (max-width: 992px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 20px;
+  }
+}
 
 h4 {
   font-size: 20px;

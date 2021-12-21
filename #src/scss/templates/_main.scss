@@ -19,6 +19,35 @@
       padding-bottom: 20px;
     }
   }
+
+  &__learn {
+    margin-bottom: 65px;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__webinar {
+    padding-top: 109px;
+    padding-bottom: 84px;
+    @media screen and (max-width: 992px) {
+      padding-top: 80px;
+      padding-bottom: 64px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 60px;
+      padding-bottom: 44px;
+    }
+    @media screen and (max-width: 576px) {
+      padding-top: 40px;
+      padding-bottom: 24px;
+    }
+  }
 }
 
 // heading block ---------
@@ -338,5 +367,291 @@
 // -----------------------
 
 // learn block --------
+
+.learn {
+  &__container {
+  }
+  &__body {
+  }
+  &__heading {
+    text-align: center;
+    margin-bottom: 84px;
+  }
+  &__label {
+    margin-top: 66px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.4);
+    @media screen and (max-width: 992px) {
+      font-size: 17px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 15px;
+    }
+  }
+  &__items {
+    display: flex;
+    margin-bottom: 46px;
+    align-items: flex-start;
+    @media screen and (max-width: 1245px) {
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+    @media screen and (max-width: 684px) {
+      margin-bottom: 0px;
+    }
+  }
+  &__item {
+  }
+}
+
+.item-learn {
+  background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.17) 100%);
+  border-radius: 20px;
+  padding: 12px;
+  border: 3px solid #202246;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+    @media screen and (max-width: 1245px) {
+      margin-right: 0px;
+      &:nth-child(odd) {
+        margin-right: 16px;
+      }
+    }
+    @media screen and (max-width: 684px) {
+      margin-right: 0px;
+      &:nth-child(odd) {
+        margin-right: 0px;
+      }
+    }
+  }
+  @media screen and (max-width: 1245px) {
+    flex: 0 1 48%;
+    margin-bottom: 16px;
+  }
+  @media screen and (max-width: 684px) {
+    flex: 0 1 100%;
+    margin-bottom: 30px;
+  }
+  &__image {
+    padding-bottom: 169px;
+    & img {
+      border-radius: 10px;
+    }
+    margin-bottom: 24px;
+  }
+  &__subInfo {
+    position: absolute;
+    top: 145px;
+    left: 25px;
+    font-size: 12px;
+    line-height: 150%;
+    padding: 6px 16px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+  }
+  &__type {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #3bf5bd;
+    margin-bottom: 8px;
+  }
+  &__label {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.8);
+    padding-right: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #292b56;
+    margin-bottom: 19px;
+  }
+  &__person {
+  }
+  &__button {
+    margin-top: 28px;
+    margin-bottom: 6px;
+    display: inline-flex;
+    text-align: center;
+    @media screen and (max-width: 1245px) {
+      width: 100%;
+    }
+  }
+  &__innerButton {
+    text-align: center;
+    display: block;
+  }
+  transition: 0.5s;
+}
+.person {
+  display: flex;
+  align-items: center;
+  &__image {
+    margin-right: 15px;
+  }
+  &__info {
+  }
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  &__job {
+    font-size: 12px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.learn__innerButton {
+  text-align: center;
+}
+.learn__button {
+  display: inline-flex;
+
+  border: 1px solid #f5443b;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f5443b;
+  border-radius: 6px;
+  padding: 14px 32px;
+  &:hover {
+    border: 1px solid #000000;
+    color: #f5443b;
+  }
+  background: none;
+  @media screen and (max-width: 967px) {
+    background: none;
+    color: #f5443b;
+    &:hover {
+      border: 1px solid #000000;
+      color: #f5443b;
+      background-color: #ffffff;
+    }
+  }
+}
+
+// -----------------------
+
+// webinar block ---------
+
+.webinar {
+  &__container {
+  }
+  &__body {
+    text-align: center;
+  }
+  &__label {
+    margin-bottom: 20px;
+  }
+  &__text {
+    margin-bottom: 104px;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.4);
+    @media screen and (max-width: 992px) {
+      margin-bottom: 74px;
+      font-size: 17px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 44px;
+      font-size: 16px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 24px;
+      font-size: 15px;
+    }
+  }
+  &__images {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 56px;
+    @media screen and (max-width: 1278px) {
+      position: static;
+    }
+    @media screen and (max-width: 992px) {
+      margin-bottom: 44px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 34px;
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: 14px;
+    }
+  }
+  &__center {
+    @media screen and (max-width: 1278px) {
+    }
+  }
+  &__centerImage {
+    @media screen and (max-width: 1278px) {
+      max-width: 700px;
+      width: 100%;
+    }
+  }
+  &__leftImage {
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    z-index: -1;
+    @media screen and (max-width: 1278px) {
+      display: none;
+    }
+  }
+  &__rightImage {
+    position: absolute;
+    top: 80px;
+    left: 800px;
+    z-index: -1;
+    @media screen and (max-width: 1278px) {
+      display: none;
+    }
+  }
+  &__seeMore {
+    text-align: right;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+  &__seeMoreLink {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #d1d1d7;
+    text-shadow: 0px 5px 10px #2e3062;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: url("../img/icons/arrow-right.svg") 50% 15% no-repeat;
+      padding-right: 30px;
+    }
+  }
+}
 
 // -----------------------
