@@ -1,0 +1,134 @@
+.footer {
+  &__container {
+  }
+  &__body {
+  }
+  &__main {
+    display: flex;
+    @media screen and (max-width: 1103px) {
+      flex-flow: row wrap;
+    }
+  }
+  &__info {
+    flex: 0 1 30%;
+    @media screen and (max-width: 1103px) {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+    @media screen and (max-width: 662px) {
+      margin-top: 20px;
+    }
+  }
+  &__logo {
+    margin-bottom: 8px;
+  }
+  &__text {
+    margin-bottom: 24px;
+    max-width: 234px;
+    font-size: 16px;
+    line-height: 170%;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.6;
+    @media screen and (max-width: 1103px) {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+  &__icons {
+    display: flex;
+    & img {
+      margin-right: 32px;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 1103px) {
+      margin-bottom: 60px;
+      justify-content: center;
+      & img {
+        margin: 0px 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__map {
+    margin-left: 40px;
+    display: flex;
+    flex: 0 1 70%;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media screen and (max-width: 1103px) {
+      flex: 1 1 100%;
+      margin-left: 0px;
+      margin: 0px 20px;
+    }
+    @media screen and (max-width: 811px) {
+      flex-flow: row wrap;
+
+      justify-content: center;
+    }
+  }
+  &__nav {
+    @media screen and (max-width: 811px) {
+      flex: 0 1 40%;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 662px) {
+      flex: 0 1 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
+  &__copyright {
+  }
+}
+
+.nav-footer {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+  @media screen and (max-width: 811px) {
+    padding: 0px 20px;
+    &:not(:last-child) {
+      margin-right: 0px;
+    }
+  }
+  &__label {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 24px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  &__navList {
+  }
+  &__item {
+    font-size: 20px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.6;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    transition: 0.5s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+}
+.copyright {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 118.75%;
+  color: #8f91d0;
+  @media screen and (max-width: 662px) {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  &__text {
+  }
+}

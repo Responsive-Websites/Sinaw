@@ -417,6 +417,10 @@ h4 {
   padding: 85px 0px 115px 0px;
 }
 
+.main__getApp {
+  margin-bottom: 100px;
+}
+
 .heading__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1081,6 +1085,101 @@ h4 {
   margin-right: 25px;
 }
 
+.footer__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.footer__logo {
+  margin-bottom: 8px;
+}
+
+.footer__text {
+  margin-bottom: 24px;
+  max-width: 234px;
+  font-size: 16px;
+  line-height: 170%;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.6;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__icons img {
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+.footer__map {
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.nav-footer:not(:last-child) {
+  margin-right: 40px;
+}
+
+.nav-footer__label {
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-footer__item {
+  font-size: 20px;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-footer__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.nav-footer__item:hover {
+  opacity: 1;
+}
+
+.nav-footer__link {
+  color: inherit;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 118.75%;
+  color: #8f91d0;
+}
+
 @media screen and (min-width: 1937px) {
   .heading__backImage {
     display: none;
@@ -1212,6 +1311,47 @@ h4 {
   }
 }
 
+@media screen and (max-width: 1103px) {
+  .footer__main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+
+  .footer__info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer__text {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .footer__icons {
+    margin-bottom: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__icons img {
+    margin: 0px 20px;
+    cursor: pointer;
+  }
+
+  .footer__map {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin-left: 0px;
+    margin: 0px 20px;
+  }
+}
+
 @media screen and (max-width: 1101px) {
   .suggestions__item:not(:last-child) {
     margin-right: 18px;
@@ -1295,6 +1435,10 @@ h4 {
 
   .main__pricing {
     padding: 65px 0px 85px 0px;
+  }
+
+  .main__getApp {
+    margin-bottom: 60px;
   }
 
   .heading__text {
@@ -1585,6 +1729,33 @@ h4 {
   }
 }
 
+@media screen and (max-width: 811px) {
+  .footer__map {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+    margin-bottom: 40px;
+  }
+
+  .nav-footer {
+    padding: 0px 20px;
+  }
+
+  .nav-footer:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 30px;
@@ -1617,6 +1788,10 @@ h4 {
 
   .main__pricing {
     padding: 45px 0px 65px 0px;
+  }
+
+  .main__getApp {
+    margin-bottom: 40px;
   }
 
   .heading__body {
@@ -1729,6 +1904,25 @@ h4 {
   }
 }
 
+@media screen and (max-width: 662px) {
+  .footer__info {
+    margin-top: 20px;
+  }
+
+  .footer__nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .copyright {
+    margin-top: 30px;
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   h1 {
     font-size: 21px;
@@ -1753,6 +1947,10 @@ h4 {
 
   .main__pricing {
     padding: 25px 0px 35px 0px;
+  }
+
+  .main__getApp {
+    margin-bottom: 20px;
   }
 
   .heading__text {
