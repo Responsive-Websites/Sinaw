@@ -6,6 +6,9 @@ body {
   line-height: 170%;
   color: $fontBaseColor;
   font-weight: 400;
+  &._lock {
+    overflow: hidden;
+  }
 }
 
 .wrapper {

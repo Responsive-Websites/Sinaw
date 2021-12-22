@@ -444,6 +444,7 @@
   position: relative;
   top: 0;
   left: 0;
+  z-index: -1;
 
   &:not(:last-child) {
     margin-right: 32px;
@@ -875,6 +876,7 @@
 }
 .premium-item {
   position: relative;
+
   &__icon {
     position: absolute;
     left: 270px;
