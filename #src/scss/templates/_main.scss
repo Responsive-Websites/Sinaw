@@ -60,6 +60,8 @@
       padding: 25px 0px 35px 0px;
     }
   }
+  &__getApp {
+  }
 }
 
 // heading block ---------
@@ -873,6 +875,110 @@
     position: static;
     &__icon {
       display: none;
+    }
+  }
+}
+
+// -----------------------
+
+// pricing block ---------
+
+.getApp {
+  &__container {
+  }
+  &__body {
+    padding: 40px 101px 0px 101px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(102.01deg, #23265c 1.96%, #352a56 101.68%);
+    border-radius: 40px;
+    @media screen and (max-width: 872px) {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+    @media screen and (max-width: 432px) {
+      padding: 40px 20px 0px 20px;
+    }
+  }
+  &__info {
+    padding-bottom: 30px;
+    padding-right: 30px;
+    flex: 1 0 500px;
+    @media screen and (max-width: 1002px) {
+      flex: 1 1 500px;
+    }
+    @media screen and (max-width: 872px) {
+      display: block;
+      text-align: center;
+      padding-right: 0px;
+    }
+    @media screen and (max-width: 432px) {
+      padding-bottom: 10px;
+    }
+  }
+  &__label {
+    font-weight: 600;
+    font-size: 47.2727px;
+    line-height: 160%;
+    color: #ffffff;
+    max-width: 451px;
+    opacity: 0.7;
+    margin-top: 50px;
+    margin-bottom: 12px;
+    @media screen and (max-width: 1002px) {
+      font-size: 34.2727px;
+    }
+    @media screen and (max-width: 872px) {
+      margin: 0 auto;
+      margin-bottom: 12px;
+      font-size: 28.2727px;
+    }
+    @media screen and (max-width: 432px) {
+      font-size: 20.2727px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 180%;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 406px;
+    margin-bottom: 32px;
+    @media screen and (max-width: 1002px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 872px) {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 872px) {
+      justify-content: center;
+    }
+    @media screen and (max-width: 432px) {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  }
+  &__image {
+    align-self: flex-end;
+    max-width: 403px;
+    & img {
+      width: 100%;
+    }
+    @media screen and (max-width: 872px) {
+      display: none;
+    }
+  }
+  &__link {
+    cursor: pointer;
+    margin-right: 25px;
+    @media screen and (max-width: 872px) {
+      margin-right: 0px;
+      margin: 5px;
     }
   }
 }

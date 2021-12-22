@@ -1017,6 +1017,70 @@ h4 {
   border-radius: 16px;
 }
 
+.getApp__body {
+  padding: 40px 101px 0px 101px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: -o-linear-gradient(347.99deg, #23265c 1.96%, #352a56 101.68%);
+  background: linear-gradient(102.01deg, #23265c 1.96%, #352a56 101.68%);
+  border-radius: 40px;
+}
+
+.getApp__info {
+  padding-bottom: 30px;
+  padding-right: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 500px;
+          flex: 1 0 500px;
+}
+
+.getApp__label {
+  font-weight: 600;
+  font-size: 47.2727px;
+  line-height: 160%;
+  color: #ffffff;
+  max-width: 451px;
+  opacity: 0.7;
+  margin-top: 50px;
+  margin-bottom: 12px;
+}
+
+.getApp__text {
+  font-size: 18px;
+  line-height: 180%;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 406px;
+  margin-bottom: 32px;
+}
+
+.getApp__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.getApp__image {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  max-width: 403px;
+}
+
+.getApp__image img {
+  width: 100%;
+}
+
+.getApp__link {
+  cursor: pointer;
+  margin-right: 25px;
+}
+
 @media screen and (min-width: 1937px) {
   .heading__backImage {
     display: none;
@@ -1179,6 +1243,22 @@ h4 {
 
   .pricing__item:first-child {
     margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1002px) {
+  .getApp__info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 500px;
+            flex: 1 1 500px;
+  }
+
+  .getApp__label {
+    font-size: 34.2727px;
+  }
+
+  .getApp__text {
+    font-size: 16px;
   }
 }
 
@@ -1460,6 +1540,51 @@ h4 {
   }
 }
 
+@media screen and (max-width: 872px) {
+  .getApp__body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .getApp__info {
+    display: block;
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  .getApp__label {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    font-size: 28.2727px;
+  }
+
+  .getApp__text {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .getApp__links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .getApp__image {
+    display: none;
+  }
+
+  .getApp__link {
+    margin-right: 0px;
+    margin: 5px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 30px;
@@ -1673,6 +1798,30 @@ h4 {
 @media screen and (max-width: 479px) {
   .suggestions {
     display: none;
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .getApp__body {
+    padding: 40px 20px 0px 20px;
+  }
+
+  .getApp__info {
+    padding-bottom: 10px;
+  }
+
+  .getApp__label {
+    font-size: 20.2727px;
+  }
+
+  .getApp__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
