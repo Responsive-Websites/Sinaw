@@ -297,6 +297,15 @@ h4 {
   font-weight: 600;
 }
 
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #171836;
+  z-index: 50;
+}
+
 .header__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,6 +406,10 @@ h4 {
 
 .burger {
   display: none;
+}
+
+.main {
+  margin-top: 100px;
 }
 
 .main__heading {

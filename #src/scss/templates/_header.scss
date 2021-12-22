@@ -1,4 +1,10 @@
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #171836;
+  z-index: 50;
   &__container {
   }
   &__body {
