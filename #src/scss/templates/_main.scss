@@ -423,7 +423,7 @@
   &__items {
     display: flex;
     margin-bottom: 46px;
-    align-items: flex-start;
+    align-items: stretch;
     @media screen and (max-width: 1245px) {
       flex-flow: row wrap;
       justify-content: center;
@@ -445,8 +445,9 @@
   position: relative;
   top: 0;
   left: 0;
-  z-index: -1;
-
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 25%;
   &:not(:last-child) {
     margin-right: 32px;
     @media screen and (max-width: 1245px) {
@@ -510,6 +511,7 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #292b56;
     margin-bottom: 19px;
+    flex: 1 1 100%;
   }
   &__person {
   }

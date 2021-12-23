@@ -330,6 +330,11 @@ h4 {
 
 .header__logo {
   margin-right: 148px;
+  max-width: 100px;
+}
+
+.header__logo img {
+  width: 100%;
 }
 
 .header__authen {
@@ -651,9 +656,9 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 46px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 .item-learn {
@@ -666,7 +671,16 @@ h4 {
   position: relative;
   top: 0;
   left: 0;
-  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -721,6 +735,9 @@ h4 {
   padding-bottom: 20px;
   border-bottom: 1px solid #292b56;
   margin-bottom: 19px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .item-learn__button {
@@ -1115,7 +1132,8 @@ h4 {
           flex: 0 1 30%;
 }
 
-.footer__logo {
+.footer__logo img {
+  width: 100px;
   margin-bottom: 8px;
 }
 

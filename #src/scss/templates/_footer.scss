@@ -20,7 +20,10 @@
     }
   }
   &__logo {
-    margin-bottom: 8px;
+    & img {
+      width: 100px;
+      margin-bottom: 8px;
+    }
   }
   &__text {
     margin-bottom: 24px;
